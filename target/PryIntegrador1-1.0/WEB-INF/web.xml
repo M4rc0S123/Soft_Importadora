@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>ProveeServlet</servlet-name>
+        <servlet-class>miServlet.ProveeServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>BuscarImporta</servlet-name>
+        <servlet-class>miServlet.BuscarImporta</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Importa</servlet-name>
+        <servlet-class>miServlet.Importa</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ImportaServlet</servlet-name>
+        <servlet-class>miServlet.ImportaServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ImportaTempServlet</servlet-name>
+        <servlet-class>miServlet.ImportaTempServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ProveeServlet</servlet-name>
+        <url-pattern>/ProveeServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>BuscarImporta</servlet-name>
+        <url-pattern>/BuscarImporta</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Importa</servlet-name>
+        <url-pattern>/Importa</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ImportaServlet</servlet-name>
+        <url-pattern>/ImportaServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ImportaTempServlet</servlet-name>
+        <url-pattern>/ImportaTempServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

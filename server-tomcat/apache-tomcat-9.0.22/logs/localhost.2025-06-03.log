@@ -1,0 +1,398 @@
+03-Jun-2025 19:06:58.985 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+03-Jun-2025 19:06:58.985 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+03-Jun-2025 19:06:58.987 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@51827393')
+03-Jun-2025 19:26:31.922 SEVERE [http-nio-8080-exec-37] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/PryIntegrador1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el fichero java generado: [C:\Users\MICHO\Downloads\PF\PryIntegrador1\server-tomcat\apache-tomcat-9.0.22\work\Catalina\localhost\PryIntegrador1\org\apache\jsp\nuevaImportacion_jsp.java]
+Only a type can be imported. modelo.Producto resolves to a package
+
+Ha tenido lugar un error en la línea: [18] en el fichero java generado: [C:\Users\MICHO\Downloads\PF\PryIntegrador1\server-tomcat\apache-tomcat-9.0.22\work\Catalina\localhost\PryIntegrador1\org\apache\jsp\nuevaImportacion_jsp.java]
+Only a type can be imported. modelo.Proveedor resolves to a package
+
+Ha tenido lugar un error en la línea: [19] en el fichero java generado: [C:\Users\MICHO\Downloads\PF\PryIntegrador1\server-tomcat\apache-tomcat-9.0.22\work\Catalina\localhost\PryIntegrador1\org\apache\jsp\nuevaImportacion_jsp.java]
+Only a type can be imported. dao.ProductoDAO resolves to a package
+
+Ha tenido lugar un error en la línea: [20] en el fichero java generado: [C:\Users\MICHO\Downloads\PF\PryIntegrador1\server-tomcat\apache-tomcat-9.0.22\work\Catalina\localhost\PryIntegrador1\org\apache\jsp\nuevaImportacion_jsp.java]
+Only a type can be imported. dao.ProveedorDAO resolves to a package
+
+Ha tenido lugar un error en la línea: [10] en el archivo jsp: [/nuevaImportacion.jsp]
+ProductoDAO cannot be resolved to a type
+7: <%@ page import="dao.ProductoDAO" %>
+8: <%@ page import="dao.ProveedorDAO" %>
+9: <%
+10:     ProductoDAO productoDAO = new ProductoDAO();
+11:     ProveedorDAO proveedorDAO = new ProveedorDAO();
+12:     List<Producto> productos = productoDAO.listar();
+13:     List<Proveedor> proveedores = proveedorDAO.listar();
+
+
+Ha tenido lugar un error en la línea: [10] en el archivo jsp: [/nuevaImportacion.jsp]
+ProductoDAO cannot be resolved to a type
+7: <%@ page import="dao.ProductoDAO" %>
+8: <%@ page import="dao.ProveedorDAO" %>
+9: <%
+10:     ProductoDAO productoDAO = new ProductoDAO();
+11:     ProveedorDAO proveedorDAO = new ProveedorDAO();
+12:     List<Producto> productos = productoDAO.listar();
+13:     List<Proveedor> proveedores = proveedorDAO.listar();
+
+
+Ha tenido lugar un error en la línea: [11] en el archivo jsp: [/nuevaImportacion.jsp]
+ProveedorDAO cannot be resolved to a type
+8: <%@ page import="dao.ProveedorDAO" %>
+9: <%
+10:     ProductoDAO productoDAO = new ProductoDAO();
+11:     ProveedorDAO proveedorDAO = new ProveedorDAO();
+12:     List<Producto> productos = productoDAO.listar();
+13:     List<Proveedor> proveedores = proveedorDAO.listar();
+14: %>
+
+
+Ha tenido lugar un error en la línea: [11] en el archivo jsp: [/nuevaImportacion.jsp]
+ProveedorDAO cannot be resolved to a type
+8: <%@ page import="dao.ProveedorDAO" %>
+9: <%
+10:     ProductoDAO productoDAO = new ProductoDAO();
+11:     ProveedorDAO proveedorDAO = new ProveedorDAO();
+12:     List<Producto> productos = productoDAO.listar();
+13:     List<Proveedor> proveedores = proveedorDAO.listar();
+14: %>
+
+
+Ha tenido lugar un error en la línea: [27] en el archivo jsp: [/nuevaImportacion.jsp]
+The method getNombre() is undefined for the type Proveedor
+24:     <label>Proveedor:</label>
+25:     <select name="id_proveedor">
+26:         <% for (Proveedor p : proveedores) { %>
+27:             <option value="<%= p.getId_proveedor() %>"><%= p.getNombre() %></option>
+28:         <% } %>
+29:     </select><br><br>
+30: 
+
+
+Ha tenido lugar un error en la línea: [34] en el archivo jsp: [/nuevaImportacion.jsp]
+The method getNombre() is undefined for the type Producto
+31:     <label>Producto:</label>
+32:     <select name="id_producto">
+33:         <% for (Producto prod : productos) { %>
+34:             <option value="<%= prod.getId_producto() %>"><%= prod.getNombre() %></option>
+35:         <% } %>
+36:     </select><br><br>
+37: 
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el fichero java generado: [C:\Users\MICHO\Downloads\PF\PryIntegrador1\server-tomcat\apache-tomcat-9.0.22\work\Catalina\localhost\PryIntegrador1\org\apache\jsp\nuevaImportacion_jsp.java]
+Only a type can be imported. modelo.Producto resolves to a package
+
+Ha tenido lugar un error en la línea: [18] en el fichero java generado: [C:\Users\MICHO\Downloads\PF\PryIntegrador1\server-tomcat\apache-tomcat-9.0.22\work\Catalina\localhost\PryIntegrador1\org\apache\jsp\nuevaImportacion_jsp.java]
+Only a type can be imported. modelo.Proveedor resolves to a package
+
+Ha tenido lugar un error en la línea: [19] en el fichero java generado: [C:\Users\MICHO\Downloads\PF\PryIntegrador1\server-tomcat\apache-tomcat-9.0.22\work\Catalina\localhost\PryIntegrador1\org\apache\jsp\nuevaImportacion_jsp.java]
+Only a type can be imported. dao.ProductoDAO resolves to a package
+
+Ha tenido lugar un error en la línea: [20] en el fichero java generado: [C:\Users\MICHO\Downloads\PF\PryIntegrador1\server-tomcat\apache-tomcat-9.0.22\work\Catalina\localhost\PryIntegrador1\org\apache\jsp\nuevaImportacion_jsp.java]
+Only a type can be imported. dao.ProveedorDAO resolves to a package
+
+Ha tenido lugar un error en la línea: [10] en el archivo jsp: [/nuevaImportacion.jsp]
+ProductoDAO cannot be resolved to a type
+7: <%@ page import="dao.ProductoDAO" %>
+8: <%@ page import="dao.ProveedorDAO" %>
+9: <%
+10:     ProductoDAO productoDAO = new ProductoDAO();
+11:     ProveedorDAO proveedorDAO = new ProveedorDAO();
+12:     List<Producto> productos = productoDAO.listar();
+13:     List<Proveedor> proveedores = proveedorDAO.listar();
+
+
+Ha tenido lugar un error en la línea: [10] en el archivo jsp: [/nuevaImportacion.jsp]
+ProductoDAO cannot be resolved to a type
+7: <%@ page import="dao.ProductoDAO" %>
+8: <%@ page import="dao.ProveedorDAO" %>
+9: <%
+10:     ProductoDAO productoDAO = new ProductoDAO();
+11:     ProveedorDAO proveedorDAO = new ProveedorDAO();
+12:     List<Producto> productos = productoDAO.listar();
+13:     List<Proveedor> proveedores = proveedorDAO.listar();
+
+
+Ha tenido lugar un error en la línea: [11] en el archivo jsp: [/nuevaImportacion.jsp]
+ProveedorDAO cannot be resolved to a type
+8: <%@ page import="dao.ProveedorDAO" %>
+9: <%
+10:     ProductoDAO productoDAO = new ProductoDAO();
+11:     ProveedorDAO proveedorDAO = new ProveedorDAO();
+12:     List<Producto> productos = productoDAO.listar();
+13:     List<Proveedor> proveedores = proveedorDAO.listar();
+14: %>
+
+
+Ha tenido lugar un error en la línea: [11] en el archivo jsp: [/nuevaImportacion.jsp]
+ProveedorDAO cannot be resolved to a type
+8: <%@ page import="dao.ProveedorDAO" %>
+9: <%
+10:     ProductoDAO productoDAO = new ProductoDAO();
+11:     ProveedorDAO proveedorDAO = new ProveedorDAO();
+12:     List<Producto> productos = productoDAO.listar();
+13:     List<Proveedor> proveedores = proveedorDAO.listar();
+14: %>
+
+
+Ha tenido lugar un error en la línea: [27] en el archivo jsp: [/nuevaImportacion.jsp]
+The method getNombre() is undefined for the type Proveedor
+24:     <label>Proveedor:</label>
+25:     <select name="id_proveedor">
+26:         <% for (Proveedor p : proveedores) { %>
+27:             <option value="<%= p.getId_proveedor() %>"><%= p.getNombre() %></option>
+28:         <% } %>
+29:     </select><br><br>
+30: 
+
+
+Ha tenido lugar un error en la línea: [34] en el archivo jsp: [/nuevaImportacion.jsp]
+The method getNombre() is undefined for the type Producto
+31:     <label>Producto:</label>
+32:     <select name="id_producto">
+33:         <% for (Producto prod : productos) { %>
+34:             <option value="<%= prod.getId_producto() %>"><%= prod.getNombre() %></option>
+35:         <% } %>
+36:     </select><br><br>
+37: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:522)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+03-Jun-2025 19:47:06.191 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+03-Jun-2025 19:47:06.192 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+03-Jun-2025 23:30:31.154 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+03-Jun-2025 23:30:31.154 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+03-Jun-2025 23:30:31.155 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@60dd3c23')
+03-Jun-2025 23:30:34.274 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/PryIntegrador1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el fichero java generado: [C:\Users\MICHO\Downloads\PF\PryIntegrador1\server-tomcat\apache-tomcat-9.0.22\work\Catalina\localhost\PryIntegrador1\org\apache\jsp\nuevaImportacion_jsp.java]
+Only a type can be imported. modelo.Producto resolves to a package
+
+Ha tenido lugar un error en la línea: [18] en el fichero java generado: [C:\Users\MICHO\Downloads\PF\PryIntegrador1\server-tomcat\apache-tomcat-9.0.22\work\Catalina\localhost\PryIntegrador1\org\apache\jsp\nuevaImportacion_jsp.java]
+Only a type can be imported. modelo.Proveedor resolves to a package
+
+Ha tenido lugar un error en la línea: [19] en el fichero java generado: [C:\Users\MICHO\Downloads\PF\PryIntegrador1\server-tomcat\apache-tomcat-9.0.22\work\Catalina\localhost\PryIntegrador1\org\apache\jsp\nuevaImportacion_jsp.java]
+Only a type can be imported. dao.ProductoDAO resolves to a package
+
+Ha tenido lugar un error en la línea: [20] en el fichero java generado: [C:\Users\MICHO\Downloads\PF\PryIntegrador1\server-tomcat\apache-tomcat-9.0.22\work\Catalina\localhost\PryIntegrador1\org\apache\jsp\nuevaImportacion_jsp.java]
+Only a type can be imported. dao.ProveedorDAO resolves to a package
+
+Ha tenido lugar un error en la línea: [10] en el archivo jsp: [/nuevaImportacion.jsp]
+ProductoDAO cannot be resolved to a type
+7: <%@ page import="dao.ProductoDAO" %>
+8: <%@ page import="dao.ProveedorDAO" %>
+9: <%
+10:     ProductoDAO productoDAO = new ProductoDAO();
+11:     ProveedorDAO proveedorDAO = new ProveedorDAO();
+12:     List<Producto> productos = productoDAO.listar();
+13:     List<Proveedor> proveedores = proveedorDAO.listar();
+
+
+Ha tenido lugar un error en la línea: [10] en el archivo jsp: [/nuevaImportacion.jsp]
+ProductoDAO cannot be resolved to a type
+7: <%@ page import="dao.ProductoDAO" %>
+8: <%@ page import="dao.ProveedorDAO" %>
+9: <%
+10:     ProductoDAO productoDAO = new ProductoDAO();
+11:     ProveedorDAO proveedorDAO = new ProveedorDAO();
+12:     List<Producto> productos = productoDAO.listar();
+13:     List<Proveedor> proveedores = proveedorDAO.listar();
+
+
+Ha tenido lugar un error en la línea: [11] en el archivo jsp: [/nuevaImportacion.jsp]
+ProveedorDAO cannot be resolved to a type
+8: <%@ page import="dao.ProveedorDAO" %>
+9: <%
+10:     ProductoDAO productoDAO = new ProductoDAO();
+11:     ProveedorDAO proveedorDAO = new ProveedorDAO();
+12:     List<Producto> productos = productoDAO.listar();
+13:     List<Proveedor> proveedores = proveedorDAO.listar();
+14: %>
+
+
+Ha tenido lugar un error en la línea: [11] en el archivo jsp: [/nuevaImportacion.jsp]
+ProveedorDAO cannot be resolved to a type
+8: <%@ page import="dao.ProveedorDAO" %>
+9: <%
+10:     ProductoDAO productoDAO = new ProductoDAO();
+11:     ProveedorDAO proveedorDAO = new ProveedorDAO();
+12:     List<Producto> productos = productoDAO.listar();
+13:     List<Proveedor> proveedores = proveedorDAO.listar();
+14: %>
+
+
+Ha tenido lugar un error en la línea: [27] en el archivo jsp: [/nuevaImportacion.jsp]
+The method getNombre() is undefined for the type Proveedor
+24:     <label>Proveedor:</label>
+25:     <select name="id_proveedor">
+26:         <% for (Proveedor p : proveedores) { %>
+27:             <option value="<%= p.getId_proveedor() %>"><%= p.getNombre() %></option>
+28:         <% } %>
+29:     </select><br><br>
+30: 
+
+
+Ha tenido lugar un error en la línea: [34] en el archivo jsp: [/nuevaImportacion.jsp]
+The method getNombre() is undefined for the type Producto
+31:     <label>Producto:</label>
+32:     <select name="id_producto">
+33:         <% for (Producto prod : productos) { %>
+34:             <option value="<%= prod.getId_producto() %>"><%= prod.getNombre() %></option>
+35:         <% } %>
+36:     </select><br><br>
+37: 
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el fichero java generado: [C:\Users\MICHO\Downloads\PF\PryIntegrador1\server-tomcat\apache-tomcat-9.0.22\work\Catalina\localhost\PryIntegrador1\org\apache\jsp\nuevaImportacion_jsp.java]
+Only a type can be imported. modelo.Producto resolves to a package
+
+Ha tenido lugar un error en la línea: [18] en el fichero java generado: [C:\Users\MICHO\Downloads\PF\PryIntegrador1\server-tomcat\apache-tomcat-9.0.22\work\Catalina\localhost\PryIntegrador1\org\apache\jsp\nuevaImportacion_jsp.java]
+Only a type can be imported. modelo.Proveedor resolves to a package
+
+Ha tenido lugar un error en la línea: [19] en el fichero java generado: [C:\Users\MICHO\Downloads\PF\PryIntegrador1\server-tomcat\apache-tomcat-9.0.22\work\Catalina\localhost\PryIntegrador1\org\apache\jsp\nuevaImportacion_jsp.java]
+Only a type can be imported. dao.ProductoDAO resolves to a package
+
+Ha tenido lugar un error en la línea: [20] en el fichero java generado: [C:\Users\MICHO\Downloads\PF\PryIntegrador1\server-tomcat\apache-tomcat-9.0.22\work\Catalina\localhost\PryIntegrador1\org\apache\jsp\nuevaImportacion_jsp.java]
+Only a type can be imported. dao.ProveedorDAO resolves to a package
+
+Ha tenido lugar un error en la línea: [10] en el archivo jsp: [/nuevaImportacion.jsp]
+ProductoDAO cannot be resolved to a type
+7: <%@ page import="dao.ProductoDAO" %>
+8: <%@ page import="dao.ProveedorDAO" %>
+9: <%
+10:     ProductoDAO productoDAO = new ProductoDAO();
+11:     ProveedorDAO proveedorDAO = new ProveedorDAO();
+12:     List<Producto> productos = productoDAO.listar();
+13:     List<Proveedor> proveedores = proveedorDAO.listar();
+
+
+Ha tenido lugar un error en la línea: [10] en el archivo jsp: [/nuevaImportacion.jsp]
+ProductoDAO cannot be resolved to a type
+7: <%@ page import="dao.ProductoDAO" %>
+8: <%@ page import="dao.ProveedorDAO" %>
+9: <%
+10:     ProductoDAO productoDAO = new ProductoDAO();
+11:     ProveedorDAO proveedorDAO = new ProveedorDAO();
+12:     List<Producto> productos = productoDAO.listar();
+13:     List<Proveedor> proveedores = proveedorDAO.listar();
+
+
+Ha tenido lugar un error en la línea: [11] en el archivo jsp: [/nuevaImportacion.jsp]
+ProveedorDAO cannot be resolved to a type
+8: <%@ page import="dao.ProveedorDAO" %>
+9: <%
+10:     ProductoDAO productoDAO = new ProductoDAO();
+11:     ProveedorDAO proveedorDAO = new ProveedorDAO();
+12:     List<Producto> productos = productoDAO.listar();
+13:     List<Proveedor> proveedores = proveedorDAO.listar();
+14: %>
+
+
+Ha tenido lugar un error en la línea: [11] en el archivo jsp: [/nuevaImportacion.jsp]
+ProveedorDAO cannot be resolved to a type
+8: <%@ page import="dao.ProveedorDAO" %>
+9: <%
+10:     ProductoDAO productoDAO = new ProductoDAO();
+11:     ProveedorDAO proveedorDAO = new ProveedorDAO();
+12:     List<Producto> productos = productoDAO.listar();
+13:     List<Proveedor> proveedores = proveedorDAO.listar();
+14: %>
+
+
+Ha tenido lugar un error en la línea: [27] en el archivo jsp: [/nuevaImportacion.jsp]
+The method getNombre() is undefined for the type Proveedor
+24:     <label>Proveedor:</label>
+25:     <select name="id_proveedor">
+26:         <% for (Proveedor p : proveedores) { %>
+27:             <option value="<%= p.getId_proveedor() %>"><%= p.getNombre() %></option>
+28:         <% } %>
+29:     </select><br><br>
+30: 
+
+
+Ha tenido lugar un error en la línea: [34] en el archivo jsp: [/nuevaImportacion.jsp]
+The method getNombre() is undefined for the type Producto
+31:     <label>Producto:</label>
+32:     <select name="id_producto">
+33:         <% for (Producto prod : productos) { %>
+34:             <option value="<%= prod.getId_producto() %>"><%= prod.getNombre() %></option>
+35:         <% } %>
+36:     </select><br><br>
+37: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:522)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:842)
